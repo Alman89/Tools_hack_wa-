@@ -1,0 +1,141 @@
+#!/bin/bash
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+###################################################
+# CTRL C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $red"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
+sleep 0.5
+echo ""
+echo -e $green"[#]> Terima kasih sudah make tools saya ... "
+sleep 0.5
+echo ""
+echo -e $white"[#]> Salam Ro0TP00R "
+read enter
+exit
+}
+eye(){
+    echo -e $okegreen " .............................................................................................."
+    sleep 0.03
+    echo -e $okegreen " .........................................@@@@@@@@@@@@........................................."
+    sleep 0.03
+    echo -e $okegreen " . .................................@@@@@@@@@@@@@@@@@@@@@@@@.................................."
+    sleep 0.03
+    echo -e $okegreen " ...............................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........................"
+    sleep 0.03
+    echo -e $okegreen " ..........................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@..................."
+    sleep 0.03
+    echo -e $okegreen " .....................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@............."
+    sleep 0.03
+    echo -e $okegreen " ..................@@@@@@@@@@@@@..................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........."
+    sleep 0.03
+    echo -e $okegreen " ................@@@@@@@@@@@@@@........,.............@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@......."
+    sleep 0.03
+    echo -e $okegreen " ..............@@@@@@@@@@@@@@@@.......................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....."
+    sleep 0.03
+    echo -e $okegreen " .............@@@@@@@@@@@@@@@@@@@.............@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@...."
+    sleep 0.03
+    echo -e $okegreen " .............@@@@@@@@@@@@@@@@@@@@@...........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....."
+    sleep 0.03
+    echo -e $okegreen " .............@@@@@@@@@@@@@@@@@@@@@@.............@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@....."
+    sleep 0.03
+    echo -e $okegreen " .............@@@@@@@@@@@@@@@@@@@@@@@..............@@@@@..........@@@@@@@@@@@@@@@@@@@@@@......"
+    sleep 0.03
+    echo -e $okegreen " ..............@@@@@@@@@@@@@@@@@@@@@@@@@.............................@@@@@@@@@@@@@@@@.........."
+    sleep 0.03
+    echo -e $okegreen " ...............@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.........................@@@@@@#@@@@@@............"
+    sleep 0.03
+    echo -e $okegreen " ..................@@@@@@@@@@@@@@@@@@@@@@@@@@@.....................@@@@@@@@@@#................."
+    sleep 0.03
+    echo -e $okegreen " ....................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@...........@@@@@@@@@@@@....................."
+    sleep 0.03
+    echo -e $okegreen " .......................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........................"
+    sleep 0.03
+    echo -e $okegreen " ..........................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@..............................."
+    sleep 0.03
+    echo -e $okegreen " .........................@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@......................................"
+    sleep 0.03
+    echo -e $okegreen " .......................@@@@@@...........@@@@@@@.............................................."
+    sleep 0.03
+    echo -e $okegreen " .....................@@@....................................................................."
+    sleep 0.03
+}
+load(){
+    echo -e "\n"
+    bar=" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "
+    barlength=${#bar}
+    i=0
+    while((i<100)); do
+        n=$((i*barlength / 100))
+        printf "\e[00;32m\r[%-${barlength}s]\e[00m" "${bar:0:n}"
+        ((i += RANDOM%5+2))
+        sleep 0.2
+    done
+}
+
+#
+clear
+echo -e $"Memulai Proyek Hack WhatsApp..."
+load
+clear
+echo -e $okegreen" Welcome To Hack WhatsApp?...."
+echo -e $red" Masukan Nama Asli Target Anda?....?" #tulisan keluar
+echo -e $okegreen " <> "
+read nick #membaca yang ditulis
+clear
+eye
+echo -e $yellow " ================================================"
+sleep 0.7
+echo -e "  ==          "$okegreen "Hack WhatsApp By Ro0TP00R       "$yellow "=="
+sleep 0.7
+echo -e $yellow " ================================================"
+echo -e $white " Welcome To $nick Di Tools Hack WA"  
+echo -e $yellow " kenapa pengen Hack Wa Terget?... Hacker!!!!"
+echo "jawab?"
+read jawab
+echo "HHHH DASAR MALING  !!! :p"
+echo Nomor Terget : #tulisan keluar read jawab
+read terget #membaca yang ditulis
+echo 
+echo "Mulai Hack WhatsApp?"
+echo "y/n"
+read confirm
+if [ $confirm = "y" ]; then
+    clear
+    echo Melakukan pembajakan
+    load
+    clear
+    eye
+    curl -s https://www.whatsapp.com
+    echo " Gunakan tools dengan bijak"
+    echo " Untuk Code Verifikasi Kalian Tunggu 1 - 2 Menit"
+    echo " Bukan Mudah Membuat Script ini"
+    sleep 0.03
+    echo -e $yellow " ========================================"
+    sleep 0.03
+    echo -e $white" ⟨⟩ Gunakan tools dengan bijak           ⟨⟩"
+    sleep 0.03
+    echo -e $white" ⟨⟩ Nomor : "$okegreen"$terget  "$white"Selamat BOS    ⟨⟩"
+    sleep 0.03
+    echo -e $white" ⟨⟩ Berhasil Mendapatkan Kode Verifikasi ⟨⟩"
+    sleep 10.00
+    echo -e $white" ⟨⟩ Kode Verifikasi : $okegreen"783250"             $white"⟨⟩"
+$white" ⟨⟩ Hack Cipta "$red"Ro0TP00R $white"                 ⟨⟩"
+    sleep 0.03
+    echo -e $yellow " ========================================"
+    sleep 0.03
+else
+    echo "Kesalahan"
+        
+fi
