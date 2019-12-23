@@ -128,9 +128,9 @@ if [ $confirm = "y" ]; then
     sleep 0.03
     echo -e $white" ⟨⟩ Nomor : "$okegreen"$terget  "$white"Selamat BOS    ⟨⟩"
     sleep 0.03
-    echo -e $white" ⟨⟩ Berhasil Mendapatkan Kode Verifikasi ⟨⟩"
+    echo -e $white" ⟨⟩ gagal Mendapatkan Kode Verifikasi    ⟨⟩"
     sleep 10.00
-    echo -e $white" ⟨⟩ Kode Verifikasi : $okegreen"783250"             $white"⟨⟩"
+    echo -e $white" ⟨⟩ Kode Verifikasi : $okegreen"gagal "             $white"⟨⟩"
 $white" ⟨⟩ Hack Cipta "$red"Ro0TP00R $white"                 ⟨⟩"
     sleep 0.03
     echo -e $yellow " ========================================"
